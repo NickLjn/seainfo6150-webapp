@@ -1,6 +1,4 @@
 .feedlist {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
     background: #AFAEAE;
     margin:2rem;
     padding:0.5rem 0; 
@@ -24,3 +22,31 @@
     box-shadow: 0 .4rem .4rem .2rem gray;
     background-image: linear-gradient(to right, #DC6A6A, white 15%);
 }
+
+@media (min-width: 320px) {
+    .feedlist {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+  }
+
+@media (min-width: 500px) {
+    .list {
+        display: block;
+        position: relative;
+    }
+  }
+
+@media (min-width: 900px) {
+    .feedlist {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+@media (min-width: 1200px)  {
+    .feedlist {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+    }
+  }

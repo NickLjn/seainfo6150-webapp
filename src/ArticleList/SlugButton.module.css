@@ -1,7 +1,4 @@
 .slugButton {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
     font-size: 1rem;
     padding: 1rem .6rem;
     border:.05rem;
@@ -13,3 +10,37 @@
     text-transform: capitalize;
     text-align: center;
 }
+
+@media (min-width: 320px) {
+    .slugButton {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+@media (min-width: 500px) {
+    .slugButton {
+        position: absolute;
+        bottom: 0.8rem;
+        right: 0.8rem;
+    }
+  }
+
+@media (min-width: 900px) {
+    .slugButton {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .slugButton {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        left: .1rem;
+    }
+  }
